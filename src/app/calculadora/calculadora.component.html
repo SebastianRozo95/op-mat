@@ -1,0 +1,29 @@
+<div class="col-12">
+    <div class="col-8 boxOperacion">
+        <p>Suma</p>
+        <div class="container">
+            <input type="number" placeholder="valor1" class="form-control" [(ngModel)]="giVal1" id="val1">
+            <input type="number" placeholder="valor2" class="form-control" [(ngModel)]="giVal2" id="val2">
+            <button class="btn btn-primary" (click)="mSumar()">
+                Sumar
+            </button>
+            <p>{{giResult}}
+        </div>
+    </div>
+
+    <div class="col-8 boxOperacion">
+      <p>Multiplicacion</p>
+      <div class="container">
+        <input id="multiVal1" class="form-control"
+        type="number" placeholder="Valor1"
+        [(ngModel)]="giVal1Multi"/>
+        <input id="multiVal2" class="form-control"
+        type="number" placeholder="Valor2"
+        [(ngModel)]="giVal2Multi"/>
+        <button class="btn btn-primary"
+        (click)="mMultiplicacion()" >
+        Multiplicacion</button>
+        <p>{{giResultMulti}}</p>
+      </div>
+    </div>
+</div>
